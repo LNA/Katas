@@ -13,5 +13,6 @@
             (should= "VIII"  (to-roman 8))
             (should= "IX"    (to-roman 9))
             (should= "X"     (to-roman 10))
+            (should= "XI"    (to-roman 11))
           )
 )
