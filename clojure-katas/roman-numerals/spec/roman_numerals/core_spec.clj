@@ -16,5 +16,6 @@
             (should= "XI"     (to-roman 11))
             (should= "XVII"   (to-roman 17))
             (should= "XIX"    (to-roman 19))
+            (should= "XX"     (to-roman 20))
           )
 )
