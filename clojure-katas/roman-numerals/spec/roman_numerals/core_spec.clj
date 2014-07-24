@@ -8,5 +8,6 @@
             (should= "III" (to-roman 3))
             (should= "IV"  (to-roman 4))
             (should= "V"   (to-roman 5))
+            (should= "VI"  (to-roman 6))
           )
 )
