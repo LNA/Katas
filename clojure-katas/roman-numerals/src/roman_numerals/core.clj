@@ -1,6 +1,6 @@
 (ns roman-numerals.core)
 
-(def roman-numerals [[5 "V"] [4 "IV"] [1 "I"]])
+(def roman-numerals [[10 "X"] [9 "IX"] [5 "V"] [4 "IV"] [1 "I"]])
 
 (defn to-roman [number]
   (loop [number number result "" numerals roman-numerals]
