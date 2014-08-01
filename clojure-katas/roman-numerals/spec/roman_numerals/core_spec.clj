@@ -1,21 +1,19 @@
 (ns roman-numerals.core-spec
   (:require [speclj.core :refer :all]
             [roman-numerals.core :refer :all]))
-(describe "roman-numerals"
-          (it "converts natural numbers to roman numerals"
-            (should= "I"      (to-roman 1))
-            (should= "II"     (to-roman 2))
-            (should= "III"    (to-roman 3))
-            (should= "IV"     (to-roman 4))
-            (should= "V"      (to-roman 5))
-            (should= "VI"     (to-roman 6))
-            (should= "VII"    (to-roman 7))
-            (should= "VIII"   (to-roman 8))
-            (should= "IX"     (to-roman 9))
-            (should= "X"      (to-roman 10))
-            (should= "XI"     (to-roman 11))
-            (should= "XVII"   (to-roman 17))
-            (should= "XIX"    (to-roman 19))
-            (should= "XX"     (to-roman 20))
-          )
-)
+
+(describe "Roman Numerals"
+          (it "converts 1 to 'I'"
+              (should="I" (to-roman 1)))
+          (it "converts 2 to 'II' "
+              (should="II" (to-roman 2)))
+          (it "converts 3 to 'III'"
+              (should="III" (to-roman 3)))
+          (it "converts 4 to 'IV'"
+              (should="IV" (to-roman 4)))
+          (it "converts 5 to 'V'"
+              (should="V" (to-roman 5)))
+          (it "converts 9 to 'IX'"
+              (should="IX" (to-roman 9)))
+          (it "converts 10 to 'X'"
+              (should="X" (to-roman 10))))
