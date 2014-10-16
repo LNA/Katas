@@ -29,4 +29,8 @@
 
   (it "gives change for 10"
     (should= [10]
-      (make-change 10))))
+      (make-change 10)))
+
+  (it "gives change for 25"
+    (should= [25]
+      (make-change 25))))
