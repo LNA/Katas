@@ -13,4 +13,8 @@
 
   (it "gives change for 3"
     (should= [1 1 1]
-      (make-change 3))))
+      (make-change 3)))
+
+  (it "gives change for 5"
+    (should= [5]
+      (make-change 5))))
