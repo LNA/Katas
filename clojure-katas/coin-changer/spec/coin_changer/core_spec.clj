@@ -33,4 +33,8 @@
 
   (it "gives change for 25"
     (should= [25]
-      (make-change 25))))
+      (make-change 25)))
+
+  (it "gives change for 66"
+    (should= [25, 25, 10, 5, 1]
+      (make-change 66))))
