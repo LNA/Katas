@@ -1,12 +1,13 @@
 class CoinChanger
   def make_change(n)
     change = []
+    coin_denominations = [25, 10, 5, 1]
     case n
-    when 1
-      change << 1
-    when 2
-      change << 1
-      change << 1
+    when 1..2
+      n.times do
+        change << 1
+      end
+      change
     when 4
       change << 1
       change << 1
