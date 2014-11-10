@@ -22,9 +22,6 @@ class CoinChanger
         end
       end
       change
-    when 50
-      change << 25
-      change << 25
     end
   end
 end
