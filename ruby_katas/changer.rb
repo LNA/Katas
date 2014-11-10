@@ -3,7 +3,11 @@ class CoinChanger
     change = []
     coin_denominations = [25, 10, 5, 1]
     case n
-    when 1..9
+    when 1..10
+      if n == 10
+        change << 10
+        n -= 10
+      end
       if n >= 5
         change << 5
         n -= 5
