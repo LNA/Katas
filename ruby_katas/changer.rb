@@ -12,7 +12,7 @@ class CoinChanger
         change << 10
         n -= 10
       end
-      if n >= 5
+      while n >= 5
         change << 5
         n -= 5
       end
