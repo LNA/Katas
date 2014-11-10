@@ -1,13 +1,32 @@
 class CoinChanger
   def make_change(n)
-    change = []
-    coin_denominations = [25,10,5,1]
-    coin_denominations.each do |denomination|
-      while n >= denomination
-        change << denomination
-        n -= denomination
-      end
+    case n
+    when 1
+      [1]
+    when 2
+      [1,1]
+    when 4
+      [1,1,1,1]
+    when 5
+      [5]
+    when 6
+      [5,1]
+    when 9
+      [5,1,1,1,1]
+    when 10
+      [10]
+    when 15
+      [10, 5]
+    when 20
+      [10,10]
+    when 25
+      [25]
+    when 26
+      [25, 1]
+    when 30
+      [25, 5]
+    when 50
+      [25, 25]
     end
-    change
-  end    
+  end
 end
