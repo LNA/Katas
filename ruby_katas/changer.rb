@@ -3,8 +3,12 @@ class CoinChanger
     change = []
     coin_denominations = [25, 10, 5, 1]
     case n
-    when 1..10
-      if n == 10
+    when 1..50
+      while n >= 25
+        n -= 25
+        change << 25
+      end
+      while n >= 10
         change << 10
         n -= 10
       end
@@ -18,22 +22,6 @@ class CoinChanger
         end
       end
       change
-    when 10
-      change << 10
-    when 15
-      change << 10
-      change << 5
-    when 20
-      change << 10
-      change << 10
-    when 25
-      change << 25
-    when 26
-      change << 25
-      change << 1
-    when 30
-      change << 25
-      change << 5
     when 50
       change << 25
       change << 25
