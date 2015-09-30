@@ -1,9 +1,11 @@
 #[allow(dead_code)]
 pub fn prime(num: i64) -> Vec<i64>  {
+  let mut factors: Vec<i64> =  vec![];
   if num > 1 {
-    vec![num]
+    factors.push(num);
   } else {
-    vec! []
+    return factors
   }
+  return factors;
 }
 
