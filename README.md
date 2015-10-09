@@ -1,0 +1,2 @@
+# Katas
+For learning!
