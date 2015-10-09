@@ -25,3 +25,18 @@ fn it_gives_two_and_two_for_four() {
 fn it_gives_five_for_five() {
   assert_eq!(prime(5), [5])
 }
+
+#[test]
+fn it_gives_two_and_three_for_six() {
+  assert_eq!(prime(6), [2,3])
+}
+
+#[test]
+fn it_gives_seven_for_seven() {
+  assert_eq!(prime(7), [7])
+}
+
+#[test]
+fn it_gives_two_three_times_for_eight() {
+  assert_eq!(prime(8), [2, 2, 2])
+}
