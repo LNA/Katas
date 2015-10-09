@@ -37,6 +37,11 @@ fn it_gives_seven_for_seven() {
 }
 
 #[test]
-fn it_gives_two_three_times_for_eight() {
+fn it_gives_three_twos_for_eight() {
   assert_eq!(prime(8), [2, 2, 2])
+}
+
+#[test]
+fn it_gives_two_threes_for_night() {
+  assert_eq!(prime(9), [3, 3])
 }
