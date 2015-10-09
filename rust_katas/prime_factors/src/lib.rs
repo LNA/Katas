@@ -8,6 +8,5 @@ pub fn prime(num: i64) -> Vec<i64>  {
     while num % divisor == 0 { factors.push(divisor); num/=divisor }
     divisor += 1
   }
-  if num> 1 { factors.push(num) }
   return factors;
 }
