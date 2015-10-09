@@ -16,7 +16,12 @@ fn it_gives_three_for_three() {
   assert_eq!(prime(3), [3]);
 }
 
-//#[test]
-//fn it_gives_two_and_two_for_four() {
-//  assert_eq!(prime(4), [2,2])
-//}
+#[test]
+fn it_gives_two_and_two_for_four() {
+  assert_eq!(prime(4), [2,2])
+}
+
+#[test]
+fn it_gives_five_for_five() {
+  assert_eq!(prime(5), [5])
+}
