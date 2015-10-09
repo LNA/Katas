@@ -45,3 +45,8 @@ fn it_gives_three_twos_for_eight() {
 fn it_gives_two_threes_for_night() {
   assert_eq!(prime(9), [3, 3])
 }
+
+#[test]
+fn it_gives_the_prime_of_a_really_really_really_big_num() {
+  assert_eq!(prime(2*3*5*7*11*13), [2, 3, 5, 7, 11, 13])
+}
